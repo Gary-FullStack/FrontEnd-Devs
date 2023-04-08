@@ -21,6 +21,11 @@ body {
   line-height: 1.5;
 } 
 
+a {
+  color: #cc4e13;
+  text-decoration: none;
+}
+
 h1, h2 {
   font-family: "Abolition Regular", Impact, Charcoal, sans-serif;
   font-weight: normal;
@@ -71,5 +76,18 @@ header, footer {
 main {
   hyphens:  auto;
 }
+
+#wildlife {
+  padding: 20% 15%;
+  border-top: 12px solid #f3753b;
+  background-color: #454959;
+  color: white;
+  box-shadow: inset 0 0 20px 10px rgba(0,10,30,.8);
+}
+
+#wildlife a {
+  color: #f7a27c;
+}
+
 
 /* Media Queries ------------------- */
