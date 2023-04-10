@@ -25,6 +25,14 @@
 
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="user_password">
+
+                <label>Age:</label>
+                <input type="radio" id="under_13" value=" under_13" name="user_age">
+                <Label for="under_13" class="light">Under 13</Label> <br>
+
+                <input type="radio" id="over_13" value=" over_13" name="user_age">
+                <Label for="over_13" class="light"> 13 or over</Label>
+
             </fieldset>
 
             <fieldset>
@@ -35,17 +43,26 @@
 
                 <label for="job">Your job role</label>
                 <select id="job" name="user_job">
-                    <option value="frontend_developer">Front-End Coder</option>
-                    <option value="php_developer">PhP Coder</option>
-                    <option value="python_developer">Python Coder</option>
-                    <option value="rails_developer">Rails Coder</option>
-                    <option value="web_designer">web designer</option>
-                    <option value="wordpress_developer">Word Press Coder</option>
-                    <option value="ios_developer">IOS Coder</option>
-                    <option value="android_developer">Android Coder</option>
-                    <option value="freelancer">Freelance Coder</option>
+                    <optgroup label="web">
+                        <option value="frontend_developer">Front-End Coder</option>
+                        <option value="php_developer">PhP Coder</option>
+                        <option value="python_developer">Python Coder</option>
+                        <option value="rails_developer">Rails Coder</option>
+                        <option value="web_designer">web designer</option>
+                        <option value="wordpress_developer">Word Press Coder</option>
+                    </optgroup>
+
+                    <optgroup label="Mobile">
+                        <option value="ios_developer">IOS Coder</option>
+                        <option value="android_developer">Android Coder</option>
+                        <option value="freelancer">Freelance Coder</option>
+                    </optgroup>
                 </select>
 
+                <label>Your Interests</label>  
+                <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Developer</label><br>
+                <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">design</label><br>
+                <input type="checkbox" id="Business" value="interest_Business" name="user_interest"><label class="light" for="Business">Business</label>
 
 
             </fieldset>
