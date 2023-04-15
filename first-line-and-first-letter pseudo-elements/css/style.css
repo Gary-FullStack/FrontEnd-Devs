@@ -1,0 +1,21 @@
+/* Pseudo-elements -------------------------------- */
+
+/* this will select the first line of text regardless of view port width */
+
+.intro::first-line {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* same as above with first letter to make a decorative drop cap*/
+
+.intro::first-letter {
+    float: left;
+    font-size: 80px;
+    color: white;
+    padding: 5px 10px;
+    background: #384047;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    line-height: 1;
+}

@@ -1,0 +1,21 @@
+
+/* targeting root intead of html lets css be more specific root is always top most element regardless of language*/
+:root {
+    background: #e3effb;
+}
+
+/* once an element is a target this Selects an element with an ID matching the current URL's fragment */
+
+/* /index.html#col-c would also target the column c #id where ever it lives */
+
+:target {
+    background: #384047;
+    color: white;
+}
+
+#col-c:target {
+    background: #eff1f2;
+    color: initial;
+    box-shadow: 0 0 6px rgba(0,0,0 .2);
+}
+

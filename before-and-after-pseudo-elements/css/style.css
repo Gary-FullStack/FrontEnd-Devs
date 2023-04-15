@@ -1,0 +1,47 @@
+/* Pseudo-elements -------------------------------- */
+
+.intro::first-line {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.intro::first-letter {
+  float: left;
+  font-size: 80px;
+  color: white;
+  padding: 5px 10px;
+  background: #384047;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+
+/* The ::before and ::after pseudo-elements insert virtual elements before and after an element’s content. These virtual elements are visible to the user and are styleable with CSS, but they do not appear in the source code. */
+
+/* to add text */
+/* .jpg::before {
+  content: "JPG - ";
+  font-size: .75em;
+} */
+
+/* to add an image or icon */
+.jpg::before {
+  content: url(../img/icn-picture.svg);
+  margin-right: 8px;
+}
+
+.zip::before {
+  content: url(../img/icn-zip.svg);
+  margin-right: 8px;
+}
+
+h1::before {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: coral;
+  margin: 0 10px;
+}
