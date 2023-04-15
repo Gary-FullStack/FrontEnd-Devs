@@ -45,3 +45,13 @@ h1::before {
   background: coral;
   margin: 0 10px;
 }
+
+/* the attr() function inserts an element's attribute value as page content. */
+
+.d-loads a::after {
+  content:attr(title);
+  display: inline-block;
+  color: initial;
+  font-size: .65em;
+  margin-left:  5px;
+}
