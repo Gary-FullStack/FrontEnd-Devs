@@ -1,0 +1,13 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+.container {
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   grid-template-rows: 100px 350px 100px;
+}
+
+
+
+

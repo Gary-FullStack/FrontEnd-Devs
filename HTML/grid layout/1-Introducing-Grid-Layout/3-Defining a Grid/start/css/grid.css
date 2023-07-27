@@ -1,0 +1,49 @@
+/* ===================================== 
+   Grid Layout
+======================================== */
+
+
+
+.grid {
+   max-width: 1000px;
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-rows: 100px 100px;
+   column-gap:  15px;
+   row-gap: 15px;
+   grid-auto-columns: 100px;
+   grid-auto-flow: column;
+   
+}
+
+
+
+
+
+
+/* this uses the fraction notation  and the repeat notation */
+/* grid-template-columns: 2fr repeat(3, 1fr); */
+
+
+/* this is minmax   it sets a minumum and maximum grid size. */
+/* grid-template-columns: minmax(200px, 300px) 1fr 1fr; */
+
+
+
+/* this is combining the repeat notation with minmax*/
+/* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+
+
+
+
+/* The Grid Layout repeat notation supports two keywords -- auto-fill and auto-fit -- to help with this and  automatically wrap and adjust */
+/* grid-template-columns: repeat(auto-fill, 200px);   */
+/*grid-template-columns: repeat(auto-fill, minmax(60px, 1fr));  to close empty space*/
+/* use auto fit to stretch to fill max-width  grid-template-columns: repeat(auto-fit, minmax(60px, 1fr));  */
+
+/*  use grid-auto-rows  to control implicite ROW tracks -   grid-auto-rows: 250px;  */
+/*  also use minmax to make the row have a min and auto grow to fit content --  grid-auto-rows: minmax(150px, auto);    */
+
+/*  use grid-auto-columns to control implicite COLUMNS tracks */
+
+/* use  grid-auto-flow: column;   to force overflow to not make extra rows.*/

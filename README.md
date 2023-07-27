@@ -1,8 +1,5 @@
 Front End Web Development
 
-Html
-Css selectors.
+Gotta practice to keep it fresh. Will put all my practice sessions here instead of multiple repo.
 
-
-Multiple folders in this repo, each folder will be a new practice session.
-
+Folders are not well structured for public use but make sense to me.
